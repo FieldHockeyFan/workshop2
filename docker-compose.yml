@@ -16,11 +16,11 @@ services:
       - DB_HOST=nctutorials.c7occyqu244q.us-east-2.rds.amazonaws.com
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST=nctutorials.c7occyqu244q.us-east-2.rds.amazonaws.com     
+      - VIRTUAL_HOST=ec2-18-225-23-4.us-east-2.compute.amazonaws.com
       - VIRTUAL_PORT=8000
   nginx:
     build: ./nginx
-    image: YOUR_REPO_HERE: 654654326444.dkr.ecr.us-east-2.amazonaws.com/workshop2:workshop2_nginx
+    image: 654654326444.dkr.ecr.us-east-2.amazonaws.com/workshop2:workshop2_nginx
     volumes:
       - static_volume:/usr/src/app/static
     ports:
